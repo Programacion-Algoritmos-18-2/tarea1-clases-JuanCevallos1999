@@ -1,20 +1,19 @@
 
 package tarea1;
+import java.util.Scanner;
 public class Estudiante {
     public String nombre,apellido;
-    public int edad,codigo;       
+    public int edad;       
        public Estudiante(){
     }
 
-    public String getNombre() {
-        
+    public String getNombre() {        
         return nombre;       
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
     public String getApellido() {
         return apellido;
     }
@@ -24,18 +23,12 @@ public class Estudiante {
     }
 
     public int getEdad() {
+
         return edad;
     }
 
     public void setEdad(int edad) {
+        Scanner teclado = new Scanner(System.in);
         this.edad = edad;
-    }
-
-    public int getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
     }
 }
